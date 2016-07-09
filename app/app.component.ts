@@ -1,7 +1,13 @@
 import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
+
+import { NavbarTopComponent } from './Components/navbar-top/navbar-top.component';
 
 @Component({
+    moduleId: module.id,
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    templateUrl: 'app.component.html',
+       
+    directives: [ROUTER_DIRECTIVES, NavbarTopComponent]
 })
 export class AppComponent { }
